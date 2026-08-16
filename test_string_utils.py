@@ -1,4 +1,4 @@
-from string_utils import reverse_string, is_palindrome
+from string_utils import reverse_string, is_palindrome, count_vowels
 
 
 def test_reverse_string():
@@ -10,3 +10,10 @@ def test_is_palindrome():
     assert is_palindrome("racecar") is True
     assert is_palindrome("A man a plan a canal Panama") is True
     assert is_palindrome("hello") is False
+
+
+def test_count_vowels():
+    assert count_vowels("hello") == 2
+    assert count_vowels("HELLO") == 2
+    assert count_vowels("xyz") == 0
+    assert count_vowels("") == 0
